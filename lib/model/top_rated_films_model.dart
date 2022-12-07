@@ -1,13 +1,13 @@
-class TopRatedFilmModel {
+class TopRatedFilmModels {
   int? page;
   List<Results>? results;
   int? totalPages;
   int? totalResults;
 
-  TopRatedFilmModel(
+  TopRatedFilmModels(
       {this.page, this.results, this.totalPages, this.totalResults});
 
-  TopRatedFilmModel.fromJson(Map<String, dynamic> json) {
+  TopRatedFilmModels.fromJson(Map<String, dynamic> json) {
     page = json['page'];
     if (json['results'] != null) {
       results = <Results>[];

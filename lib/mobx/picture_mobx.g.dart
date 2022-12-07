@@ -8,25 +8,25 @@ part of 'picture_mobx.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
-mixin _$TopRatedFilm on _TopRatedFilmBase, Store {
+mixin _$TopRateddFilms on _TopRateddFilmsBase, Store {
   late final _$topfilmsAtom =
-      Atom(name: '_TopRatedFilmBase.topfilms', context: context);
+      Atom(name: '_TopRateddFilmsBase.topfilms', context: context);
 
   @override
-  dynamic get topfilms {
+  TopRatedFilmModels get topfilms {
     _$topfilmsAtom.reportRead();
     return super.topfilms;
   }
 
   @override
-  set topfilms(dynamic value) {
+  set topfilms(TopRatedFilmModels value) {
     _$topfilmsAtom.reportWrite(value, super.topfilms, () {
       super.topfilms = value;
     });
   }
 
   late final _$isAlbumTracksLoadedAtom =
-      Atom(name: '_TopRatedFilmBase.isAlbumTracksLoaded', context: context);
+      Atom(name: '_TopRateddFilmsBase.isAlbumTracksLoaded', context: context);
 
   @override
   bool get isAlbumTracksLoaded {
@@ -42,7 +42,7 @@ mixin _$TopRatedFilm on _TopRatedFilmBase, Store {
   }
 
   late final _$getTopRatedFilmsAsyncAction =
-      AsyncAction('_TopRatedFilmBase.getTopRatedFilms', context: context);
+      AsyncAction('_TopRateddFilmsBase.getTopRatedFilms', context: context);
 
   @override
   Future getTopRatedFilms() {
