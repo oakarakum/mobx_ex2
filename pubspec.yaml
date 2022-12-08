@@ -40,9 +40,7 @@ dependencies:
   mobx_codegen: ^2.1.1
   flutter_mobx: ^2.0.6+5
   build_runner: ^2.3.2
-
-
-
+  dio: ^4.0.6
 
 dev_dependencies:
   flutter_test:
